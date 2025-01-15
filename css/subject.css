@@ -1,0 +1,160 @@
+@import url("style.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Start Principals */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 100%;
+}
+/* End Principals */
+@media screen and (max-width:500px) {
+    main{
+        padding: 0;
+    }
+}
+main .container{
+
+}
+@media screen and (max-width: 530px){
+    main .container{
+        display: block;
+    }
+}
+main .container .sec{
+    /* background-color: brown; */
+    grid-area: sec;
+    /* text-align: center; */
+    display: block;
+    /* text-align: center; */
+    width: 100%;
+    margin: auto;
+}
+main .container .sec li{
+    width: 50%;
+    margin: auto;
+}
+main .container form{
+    /* background-color: rgb(56, 56, 56); */
+    /* grid-area: form; */
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+main .container form *{
+    margin: 5px 10px;
+}
+
+main .container form .select-box{
+    padding: 10px 30px;
+    font-size: 25px;
+    width: 132px;
+}
+main .container form input[type="submit"]{
+    padding: 10px 30px;
+    font-size: 25px;
+    outline: none;
+    background-color: #d30d87;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+@media screen and (max-width:550px){
+    main .container form .select-box , main .container form input[type="submit"]{
+       font-size: 15px;
+    }
+   }
+main .container .display-page{
+    /* background-color: rgb(255, 0, 0); */
+    grid-area: disp-page;
+    padding: 50px 20px;
+    display: grid;
+    grid-gap: 20px 15px;
+    grid-template-columns: repeat(auto-fill,minmax(280px,auto));
+    grid-template-rows: repeat(auto-fill,120px);
+}
+@media screen and (max-width:500px){
+    main .container .display-page{
+        padding: 50px 0;
+    }
+}
+main .container .display-page .file{
+    /* background-color: rgb(222, 1, 1); */
+    border-radius: 10px;
+    /* box-shadow: 1px 2px 7px 5px rgb(0 0 0 / 41%); */
+    border: 1px solid #c1c1c1;
+    height: 120px;
+}
+@media screen and (max-width:500px){
+    main .container .display-page .file{
+        width: 49vw;
+    }
+
+}
+main .container .display-page .file i{
+    font-size: 20px;
+}
+main .container .display-page .file-desc{
+    display: flex;
+    align-items: center;
+}
+main .container .display-page .file *{
+    padding: 5px 10px;
+}
+main .container .display-page .file a.download-btn{
+    background: #166b08;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 15px;
+    display: inline-block;
+}
+main .container .display-page .file a.show-course{
+    background-color: #00aaff;
+    margin-left: 15px;
+    color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+}
+@media screen and (max-width:500px){
+    main .container .display-page .file a.show-course,main .container .display-page .file a.download-btn{
+        font-size: 10px;
+    }
+}
+main .container .pagination ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fill,30px); */
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 200px;
+}
+@media screen and (max-width:1000px){
+    main .container .pagination ul{
+        margin: 0 -2vw;
+    }
+}
+main .container .pagination .box{
+    padding: 5px;
+    color:#fff;
+    background-color: #0358b3;
+    /* border: 2px solid #0358b3; */
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 10px;
+}

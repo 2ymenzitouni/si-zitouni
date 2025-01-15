@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Start Principals */
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+/* End Principals */
+h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+}
+table{
+    background-color: #0863ad;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+table tr:first-child{
+    padding: 10px;
+    background-color: #027adf;
+    color: #fff;
+}
+table tr:first-child th:nth-child(2) select{
+    padding: 5px 15px;
+    margin-left: 15px;
+    border: 2px solid #015da8;
+    background-color: #5ac6fc;
+}
+table tr:first-child th:nth-child(3) input{
+    padding: 5px 15px;
+    margin-left: 15px;
+    border: 2px solid #015da8;
+    background-color: #5ac6fc;
+    /* color: #fff; */
+    border-radius: 10px;
+    outline: none;
+}
+table th , td{
+    padding: 15px;
+}
+table tr:not(:first-child){
+    background-color: #b7ddfd;
+}
+.btn{
+    padding: 10px 25px;
+    /* width: 120px; */
+    color: #fff;
+    border-radius: 20px;
+    display: inline-block;
+    float: right;
+}
+a.add-file{
+    background-color: #166b08;
+    margin-right: 100px;
+}
+a.add-file:hover{
+    background-color: #23a110;
+}
+a.add-file i{
+    padding-left: 10px;
+}
+a.back-home{
+    background-color: #00aaff;
+    margin-right: 50px;
+}
+a.back-home:hover{
+    background-color: #0394dd;
+}
+a.back-home i{
+    padding-right: 10px;
+}

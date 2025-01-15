@@ -1,0 +1,75 @@
+@import url("admin.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Start Principals */
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 100%;
+}
+/* End Principals */
+h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+}
+form{
+    width: 100%;
+    /* background-color: blue; */
+    padding: 70px 100px 0; 
+}
+form *{
+    margin: 30px 0;
+    padding-right: 20px;
+}
+form label{
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+}
+form select{
+    padding: 10px 23px;
+}
+form input[type="text"]{
+    padding: 10px 200px 10px 15px;
+}
+form input[type="file"]{
+    display: none;
+}
+form label[for="upload-btn-file"]{
+    background-color: #0358b3;
+    padding: 10px 25px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+form label[for="upload-btn-file"]:hover{
+    background-color: #0a6dd7;
+}
+form input[type="submit"]{
+    padding: 10px 40px;
+    /* margin-left: 100px; */
+    transform: translateX(130px);
+    background-color: rgb(227, 27, 27);
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+form input[type="submit"]:hover{
+    background-color: rgb(252, 51, 51);
+}
